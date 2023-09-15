@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="paint-palette.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <title>Etch-a-Sketch</title>
 </head>
-<body>
     <h1>Etch a Sketch</h1>
-    <div class="container"></div>
+    <div class="canvasContainer">
+        <div class="gridContainer"></div>
+
+        <div class="buttons">
+            <button type="button" class="reset">clear</button>
+            <button type="button" class="RGB">RGB</button>
+            <button type="button" class="dark">Dark Mode</button>
+            <button type="button" class="eraser">eraser</button>
+            <button type="button" class="removeGrid">remove Grid</button>
+            <button type="button" class="darkenEffect">Darken Effect</button>
+                <div>
+                    <input type="range" id="girdNum" name="girdNum" step="8" min="8" max="64" />
+                    <label for="girdNum">grid squares</label>
+                    <input type="color" id="color" name="color" value="#000" />
+                    <label for="color">Pick you pen color</label>
+                </div>
+        </div>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>

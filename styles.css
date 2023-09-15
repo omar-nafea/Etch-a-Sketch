@@ -1,13 +1,74 @@
-.container{
+    
+h1{
+    text-align: center;
+}
+
+.canvasContainer{
+    display: flex;    
+    justify-content: center;
+    
+
+
+}
+.gridContainer{
     display: flex;
     flex-wrap: wrap;
     width: 960px;
-    border: 5px solid black;
+    height: 960px;
+    border: 10px solid #333;
 }
 .square{
-    border: 1px solid black;
+    /* border: 1px solid #ccc; */
     background-color: #fff;
-    height: 60px;
     width: 60px;
+    height: 60px;
     box-sizing: border-box;
+}
+
+.buttons{
+        display: flex;
+        flex-direction: column;
+
+}
+.buttons > button {
+    margin: 20px;
+    background-color: #bf6060ad;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 10px;
+    box-shadow: 5px 5px;
+    border: none;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    color: #f9e021
+}
+.reset:hover{
+    box-shadow: none !important;
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+.hovering{
+    box-shadow: none !important;
+    transform: translateX(5px);
+    transform: translateY(5px);
+}
+
+
+
+input[type='color'] {
+    -webkit-appearance: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    background-color: transparent;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: 50px;
 }
